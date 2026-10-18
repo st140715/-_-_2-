@@ -10,7 +10,7 @@ typedef struct {
 
 Arena arena_create(size_t capacity) {
     Arena a = {0};
-    a.memory = malloc(capacity);
+    a.memory =  static_cast<unsigned char *>(malloc(capacity));
     if (a.memory != NULL) {
         a.capacity = capacity;
     }
