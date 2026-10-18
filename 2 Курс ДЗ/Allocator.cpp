@@ -44,4 +44,4 @@ void arena_destroy(Arena *a) {
         free(a->memory);
         *a = (Arena){0};
     }
-}
+} // Изменение
